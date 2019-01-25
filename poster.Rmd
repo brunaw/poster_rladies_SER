@@ -1,0 +1,114 @@
+---
+#----ESSENTIALS----#
+title: '\fontfamily{phv}\selectfont R-Ladies São Paulo'
+author: "Author One^1^ Author Two^2^"
+affiliation: "^1^Department of Poster Layouts, University of Markdown; ^2^Deparment of Another Institution, Institution University"
+
+#----FONT STYLE----#
+font_size: "30pt" #sets '\normalsize' (sizes of the title and sections headings will adjust based on it)
+font_family: "palatino" # choose from typical latex fonts (example: "palatino")
+
+#----COLOURS----#
+
+#Background/ Line Colours
+title_bgcol: "88398A"  #Hex colour for background of poster title section (default is blue)
+poster_bgcol: "ffffff" #colour of the poster main background
+cite_col: "008080" #colour of ciation elements
+url_col: "008080" #colour of url links
+link_col: "008080" #colour of other links within the poster
+columnline_col: "0b4545" #colour 
+header_bgcol: "008080"
+
+#Text Colours
+title_textcol: "ffffff" #colour of title text
+author_textcol: "ffffff" # Colour of author text
+affiliation_textcol: "ffffff" # Colour of affiliation text
+body_textcol: "000000" # Colour of main text in the body of poster
+header_textcol: "CC0000" # Colour of the poster header titles
+footnote_textcol: "FFFFFF" # Colour of footnote text if used
+
+#----POSTER SIZE & COLUMN FORMATTING----#
+poster_height: "38in" # height in inches of poster
+poster_width: "45in" # width in inches of poster
+column_numbers: 2 # Number of columns that the poster has
+column_margins: "15mm" # Margin spacing for columns
+
+#----OTHER----# # name of the .bib file used for referencing
+output: posterdown::posterdown_pdf
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, results = 'asis',fig.height = 3.5, fig.width = 4.5, out.width = "100%", warning = FALSE, fig.align = 'center', message = FALSE, dev='cairo_pdf')
+```
+
+
+# Introdução
+
+Welcome to `posterdown` ! This is my attempt to provide a semi-smooth workflow for those who wish to take their `RMarkdown` skills to the conference world. Many creature comforts from `RMarkdown` are available in this package such as `Markdown` section notation, figure captioning, and even citations like this one [@holden_identifying_2012] The rest of this example poster will show how you can insert typical conference poster features into your own document. 
+
+
+```{r}
+print("a")
+plot(iris$Sepal.Length)
+```
+
+# Objetivos
+
+blablblablablblablablblablablblablablblablablblablab
+lblablablblablablblablablbla
+blablblablablblablablblablablblablablblablablblablabl
+blablablblablablblablablbla
+blablblablablblablablblablablblablablblablablblablablbla
+blablblablablblablablbla
+blablblablablblablablblablablblablablblablablblablablbla
+blablblablablblablablbla
+
+# Sessao 1
+
+blablblablablblablablblablablblablablblablablblablablblabla
+blblablablblablablbla
+blablblablablblablablblablablblablablblablablblablablbla
+blablblablablblablablbla
+blablblablablblablablblablablblablablblablablblablablbla
+blablblablablblablablbla
+
+
+# Sessao 3
+
+blablblablablblablablblablablblablablblablablblablablbla
+blablblablablblablablbla
+blablblablablblablablblablablblablablblablablblablablbla
+blablblablablblablablbla
+blablblablablblablablblablablblablablblablablblablabl
+blablablblablablblablablbla
+blablblablablblablablblablablblablablblablablblablabl
+blablablblablablblablablbla
+
+*_______________________________________________________________________________________*
+
+# Quem somos 
+
+blablblablablblablablblablablblablablblablablblablablbla
+blablblablablblablablbla
+blablblablablblablablblablablblablablblablablblablablbla
+blablblablablblablablbla
+blablblablablblablablblablablblablablblablablblablablbla
+blablblablablblablablbla
+blablblablablblablablblablablblablablblablablblablabl
+blablablblablablblablablbla
+
+------------------------------------------------------------------------
+
+# Cursos, meetups & mais
+
+------------------------------------------------------------------------
+
+# Resultados
+
+```{r, out.width="20%"}
+knitr::include_graphics("img/hex.png")
+```
+
+
+
+# Como participar
